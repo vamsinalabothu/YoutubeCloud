@@ -1,0 +1,149 @@
+.search-bar{
+        border-radius:30px;
+        width:0px;
+        height: 50px;
+        flex: 1;
+        font-size:larger;
+        box-shadow: 10;
+        border-color: rgba(211, 211, 211, 0.12);
+      }
+.search-bar::placeholder{
+  font-family: Roboto, Arial;
+  font-size: 20px;
+  align-items: center;
+  padding-left: 10px
+}
+.header{
+  height: 30x;
+  display: flex;
+  flex-direction: row; 
+  margin-bottom: 10px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left:0;
+  right: 0;
+  top: 0;
+  background-color: white;
+  border-bottom-style: solid;
+  border-bottom-color:hsl(0, 48%, 95%);
+}
+.left-section{
+  width: 180px;
+  display: flex;
+  flex-direction:row;
+  margin: 10px;
+  margin-left: 0px;
+}
+.middle-section{
+  flex:1;
+  max-width:500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 15px;
+}
+.right-section{
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-shrink: 0;
+}
+.h-menu{
+  width: 20px;
+  padding-left: 30px;
+}
+.youtube-logo{
+  width: 100px;
+  margin: 10px;
+  padding-left:28px;
+}
+.search-icon{
+  width: 30px;
+  padding-top: 8px;
+}
+.search-button{
+  width: 75px;
+  height: 45px;
+  border-width: 1px;
+  border-color: rgba(211, 211, 211, 0.12);
+  border-radius: 30px;
+  margin-left:-77px;
+  box-shadow: inset 1px 2px 5px rba(0,0,0,0.05);
+  position: relative;
+}
+.voice-button{
+  margin-left: 10px;
+  height: 50px;
+  border-radius: 100px;
+  border-style: ridge ;
+  border-color: lab(84.56% 0 -0.01 / 0)
+}
+.voice-search{
+  width: 35px;
+}
+.upload{
+  width: 35px;
+  margin: 10px;
+  padding-left:10px;
+}
+.apps{
+  width: 35px;
+  margin: 10px;
+  padding-left:10px;
+}
+.notifications{
+  width: 35px;
+  margin-left: 10px;
+  padding-left:10px;
+  
+}
+.profile img{
+  width:35px;
+  height: px;
+  margin-left: 50px;
+  border-radius: 30px;
+}
+.h-menu,
+.youtube-logo,
+.search-button,
+.voice-button,
+.upload,
+.apps,
+.notifications,
+.profile
+{
+  cursor: pointer;
+}
+
+.search-button .tooltip,
+.voice-button .tooltip,
+.create-button .tooltip,
+.apps-button .tooltip,
+.notifications-button .tooltip,
+.profile-button .tooltip
+{
+  position: absolute;
+  opacity: 0;
+  margin: 10px;
+  padding: 8px;
+  border-radius: 2px;
+  background-color: gray;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: roboto;
+}
+.search-button:hover .tooltip,
+.voice-button:hover .tooltip,
+.create-button:hover .tooltip,
+.apps-button:hover .tooltip,
+.upload-button:hover .tooltip,
+.notifications-button:hover .tooltip,
+.profile-button:hover .tooltip
+{
+  cursor: pointer;
+  opacity: 1;
+}
